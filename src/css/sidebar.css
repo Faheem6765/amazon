@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+/* Expand entire sidenav outwards */
+@keyframes moveSidebar {
+  0% {
+    transform: translateX(-420px);
+    z-index: 100;
+  }
+  100%{
+      transform: translateX(-0px);
+  }
+}
+
+/* Fade into existence */
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.sidebar{
+    height: 100vh;
+    width: 335px;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: white;
+    overflow: hidden;
+    z-index: 100;
+    overflow-y: auto;
+    transform-origin: left center;
+    transform: translateX(-420px);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+.sidebar .header{
+   background-color: rgb(13, 13, 68);
+   display: flex;
+   align-items: center; 
+   height: auto;
+}
+
+.header_text{
+    color:white;
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 15px; 
+    margin-top: 12px;
+}
+
+.categories .cat-heading{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.sidebar .links-container li{
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 9px;
+    display: block;
+    padding: 10px;
+    margin-left: -30px;
+    padding-left: 30px;
+}
+
+.hr-line{
+    margin-left: -30px;
+}
+
+ul li:hover{
+    background-color: rgb(215, 215, 216);
+    display: block;
+    cursor: pointer;
+}
+
+ul li:first-child{
+    margin-top: 5px;
+}
+
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index:50;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.closeBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 350px;
+    margin-top: -20px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    transform: translateX(-5px);
+    z-index: 75;
+}
+
+.links-container{
+    position: relative;
+}
+
+.links-container .arrowIcon{
+  position: absolute;
+  right: 20px;
+  font-size: 26px;
+}
+
+/* Applying Media Quries */
+
+@media screen and (max-width:768px) {
+    .sidebar{
+        max-width: 255px;
+    }
+
+    .closeBtn{
+        margin-left: 260px;
+        margin-top: 0px;
+    }
+
+   .sidebar ul li{
+        margin-left: -35px;
+        padding-left: 10px;
+        margin-top: 2px;
+        font-size: 14px;
+    }
+
+    .links-container .arrowIcon{
+  position: absolute;
+  right: 12px;
+  font-size: 24px;
+}
+
+    .categories .cat-heading{
+        font-size: 17px;
+        font-weight: 600;
+    }
+}

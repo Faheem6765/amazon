@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container{
+    width: 100%;
+    margin-top: -60px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.signin-logo>img{
+   width: 200px;
+   height: 200px;
+}
+
+.inner-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: -50px;
+    background-color: white;
+    display: flex;
+    justify-content: center; 
+}
+
+.inner{
+    width: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    padding: 20px;
+    margin: 10px;
+    /* box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5); */
+}
+
+.inner .signin-text{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.inner > input{
+    height: 37px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.8);
+    /* outline: 2px solid rgb(231, 150, 0); */
+}
+
+input:focus{
+    outline: 2px solid rgb(231, 150, 0);
+    border: none;
+}
+
+.inner .btn{
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.terms-text{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.terms-text span{
+    color: blue;
+}
+
+.need-help{
+    color: blue;
+}
+
+.bottom-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    /* background-color: white; */
+    top: 62%;
+}
+
+.bottom-content>p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+hr{
+    width: 10%;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:68%;
+}
+
+.button button{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 234, 234);
+    border: 1px solid rgba(0,0,0,0.8);
+}
+
+.button button:hover{
+    background-color: lightgray;
+}
+
+@media screen and (max-width:767px) {
+    .bottom-content{
+        top:67%;
+    }
+
+    .button{
+        top:74%;
+    }
+
+    .signin-logo>img{
+        margin-bottom: -20px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .button button{
+        width: 300px;
+        flex: 1;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .inner{
+        margin:20px
+    }
+}

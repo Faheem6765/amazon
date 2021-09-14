@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.menu{
+    width: 100%;
+    background-color: rgba(30,47,62,255);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.menubtn{
+    color: white;
+    margin-left: 10px;
+}
+
+.all_text{
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-left: 20px;
+}
+
+
+.menu .bars{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.right-text{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+/* .circle{
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    transform: translateX(200px);
+}
+
+@keyframes demo {
+    from{
+        transform: rotate(360deg);
+        height: 200px;
+        width: 200px;
+    }
+    to{
+        transform: rotate(-360deg);
+        height: 200px;
+        width: 200px;
+    }
+}
+.rotate{
+    background-color: yellowgreen;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 200px;
+    position: absolute;
+    top: 19%;
+    left:220px;
+    transition: 2s linear infinite;
+    animation: demo 10s linear infinite; 
+} */
+
+@media screen and (max-width:838px) {
+    .right-text{
+        display: none;
+    }
+}
+
+@media screen and (max-width:561px) {
+
+    .menu{
+        /* display: flex; */
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .menu-links{
+         display: flex;
+         overflow-x: auto;
+         overflow-y: hidden;
+         white-space: nowrap;
+         width: 100vw;
+    }
+
+    .menu-links {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.menu-links::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+    .bars .menubtn{
+        font-size: 19px;
+    }
+
+    .all_text{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .menu{
+        background-color: rgba(30,40,45,255);
+    }
+}
+
+
