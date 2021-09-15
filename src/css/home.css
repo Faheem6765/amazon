@@ -24,7 +24,6 @@ body{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -350px;
 
 }
 
@@ -33,6 +32,31 @@ body{
     margin-left: auto;
     margin-right: auto; 
     z-index: -1;
+        /* margin-bottom: 40px; */
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 
+}
+
+@media screen and (max-width:498px) {
+    .home-image img{
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .home-image {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:352px) {
+    .home-image img{
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width:311px) {
+    .home-image img{
+        margin-top: -100px;
+    }
 }
