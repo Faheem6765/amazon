@@ -10,6 +10,7 @@
     justify-content: space-around;
     overflow-y: hidden;
     overflow-x: auto;
+    margin-top: -320px;
 }
 
 .card{
@@ -104,9 +105,13 @@
 }
 
 @media screen and (max-width:1080px) {
+
+    .card-container{
+     margin-top: -180px;
+    }
+
     .card{
         width: 300px;
-        margin-top: 20px;
     }
 }
 
@@ -115,18 +120,19 @@
         height: 200px;
     }
 
+    .card-container{
+     margin-top: -150px;
+    }
+
     .card{
         width: 250px;
-        margin-top: 80px;
     }
 }
 
 @media screen and (max-width:833px) {
-    .card{
-        margin-top: 100px;
-    }
 
        .card-container {
+           margin-top: -130px;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
@@ -136,15 +142,23 @@
 }
 
 @media screen and (max-width:780px) {
+    .card-container{
+     margin-top: -110px;
+    }
     .card{
         width: 200px;
-        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card-container{
+        margin-top: -80px;
     }
 }
 
 @media screen and (max-width:706px) {
-    .card{
-        margin-top: 150px;
+    .card-container{
+        margin-top: -100px;
     }
 
     .card-image>img{
@@ -153,8 +167,11 @@
 }
 
 @media screen and (max-width:630px) {
+    .card-container{
+     margin-top: -110px;
+    }
+
     .card{
-        margin-top: 180px;
         margin-left: 10px;
     }
 
@@ -188,10 +205,10 @@
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
+        margin-top: -120px;
     }
 
     .card{
-        margin-top: 200px;
         height: 250px;
         width: 170px;
         margin-left: 10px;
@@ -239,8 +256,16 @@
         margin-left: 30px; 
     }
 
+    .card-container{
+     margin-top: -130px;
+    }
+
+    .card-header>p{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
     .card{
-        margin-top: 220px;
         width: 140px;
         overflow-x: hidden;
         height: 200px;
@@ -284,8 +309,11 @@
         margin-left: 80px;
     }
 
+    .card-container{
+     margin-top: -130px;
+    }
+
     .card{
-        margin-top: 250px;
         height: 170px;
         width: 130px;
         padding: 7px;
